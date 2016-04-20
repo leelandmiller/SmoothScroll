@@ -14,6 +14,21 @@ function scrollToAnchor(anchorId) {
 		{
             scrollTop: offset
         },
-        'slow'
+        {
+            /*
+            duration can be set to 
+            'fast', 'slow', or any integer
+            (in milliseconds)
+            jQuery's default is 400.
+            'fast' = 200, 'slow' = 600.
+            I like it relatively slow.
+            */
+            duration: 1500,
+            /* 
+            'easeOutBack' provides the bouncy effect
+            for other effects, please refer to README.md
+            */
+            easing: 'easeOutBack'
+        }
     );
 }
