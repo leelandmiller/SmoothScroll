@@ -1,0 +1,76 @@
+<!doctype html>
+<!------- Sample HTML page ------->
+<html>
+    <head>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> 
+        
+        <style>
+            #scroll1, #scroll2, #scroll3 {
+                height:900px;
+            }
+            
+            nav {
+                text-align: center;
+            }
+            ul {
+                list-style: none;
+            }
+            ul li {
+                display: inline;
+                padding: 0 20px;
+                cursor: pointer;
+            }
+            li a:hover {    
+                color: blue;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- You can use id or class for your a tags for the actual links. -->
+        <nav>
+            <ul>
+                <li>
+                    <a id="scroll1Link">Section 1</a>
+                </li>
+                <li>
+                    <a id="scroll2Link">Section 2</a>
+                </li>
+                <li>
+                    <a id="scroll3Link">Section 3</a>
+                </li>
+            </ul> 
+        </nav>
+        <!-- Put an a tag where you want each link to scroll to.
+                Opening a tag should be at very top of where you want to scroll to -->
+        
+        <div id="scroll1">
+            <h1>Section 1</h1>
+        </div>
+
+        <div id="scroll2">
+            <h1>Section 2</h1>
+        </div>
+
+        <div id="scroll3">
+            <h1>Section 3</h1>
+        </div>
+        
+
+        <script src="smoothScroll.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#scroll1Link").on('click', function () {
+                    scrollToAnchor('scroll1');
+                });
+                $("#scroll2Link").on('click', function() {
+                    scrollToAnchor('scroll2');
+                });
+                $("#scroll3Link").on('click', function() {
+                    scrollToAnchor('scroll3');
+                });
+            });
+        </script>
+    </body>
+</html>
