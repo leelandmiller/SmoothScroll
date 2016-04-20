@@ -1,5 +1,5 @@
 # SmoothScroll
-#####A simple function to smoothly scroll to same page anchors!
+#####A simple plugin to smoothly scroll to same page anchors!
 This is really easy to use! 
 
 ####Setup
