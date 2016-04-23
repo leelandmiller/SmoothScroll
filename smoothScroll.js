@@ -23,7 +23,7 @@ function scrollToAnchor(anchorId) {
             'fast' = 200, 'slow' = 600.
             I like it relatively slow.
             */
-            duration: 1500,
+            duration: 1200,
             /* 
             'easeOutBack' provides the bouncy effect
             for other effects, please refer to README.md
