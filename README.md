@@ -1,7 +1,7 @@
 # SmoothScroll
 ##### A simple plugin to smoothly scroll to same page anchors!
 This is really easy to use! 
-Demo: http://leelandmiller.github.io/SmoothScroll/
+Demo: http://leelandmiller.github.io/SmoothScroll/sampleHTML.html
 
 #### Setup
 This plugin requires jQuery and jQueryUI (which also requires jQuery), so the first thing you'll need to do is either download/install jQuery to your directory,
